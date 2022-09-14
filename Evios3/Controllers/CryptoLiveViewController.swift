@@ -7,10 +7,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CryptoLiveViewController: UIViewController {
+    
 
+    @IBOutlet var tabViewCryptoLive: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Crypto Live"
         // Do any additional setup after loading the view.
     }
 

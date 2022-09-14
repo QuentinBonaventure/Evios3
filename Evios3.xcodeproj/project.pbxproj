@@ -9,21 +9,35 @@
 /* Begin PBXBuildFile section */
 		E46B4E4428D1EC3F00BFAE28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46B4E4328D1EC3F00BFAE28 /* AppDelegate.swift */; };
 		E46B4E4628D1EC3F00BFAE28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46B4E4528D1EC3F00BFAE28 /* SceneDelegate.swift */; };
-		E46B4E4828D1EC3F00BFAE28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46B4E4728D1EC3F00BFAE28 /* ViewController.swift */; };
+		E46B4E4828D1EC3F00BFAE28 /* CryptoLiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46B4E4728D1EC3F00BFAE28 /* CryptoLiveViewController.swift */; };
 		E46B4E4B28D1EC3F00BFAE28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E46B4E4928D1EC3F00BFAE28 /* Main.storyboard */; };
 		E46B4E4D28D1EC3F00BFAE28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E46B4E4C28D1EC3F00BFAE28 /* Assets.xcassets */; };
 		E46B4E5028D1EC3F00BFAE28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E46B4E4E28D1EC3F00BFAE28 /* LaunchScreen.storyboard */; };
+		E46B4E5E28D1EE3E00BFAE28 /* CustomCryptoLiveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46B4E5C28D1EE3E00BFAE28 /* CustomCryptoLiveCell.swift */; };
+		E46B4E5F28D1EE3E00BFAE28 /* CustomCryptoLiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E46B4E5D28D1EE3E00BFAE28 /* CustomCryptoLiveCell.xib */; };
+		E46B4E6228D1EE5900BFAE28 /* CustomCryptoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46B4E6028D1EE5900BFAE28 /* CustomCryptoCell.swift */; };
+		E46B4E6328D1EE5900BFAE28 /* CustomCryptoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E46B4E6128D1EE5900BFAE28 /* CustomCryptoCell.xib */; };
+		E46B4E6528D1EEEA00BFAE28 /* CryptoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46B4E6428D1EEEA00BFAE28 /* CryptoViewController.swift */; };
+		E46B4E6728D1F41200BFAE28 /* CryptoLive.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46B4E6628D1F41200BFAE28 /* CryptoLive.swift */; };
+		E46B4E6A28D1F42300BFAE28 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = E46B4E6928D1F42300BFAE28 /* Alamofire */; };
+		E46B4E6D28D1F43700BFAE28 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = E46B4E6C28D1F43700BFAE28 /* AlamofireImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E46B4E4028D1EC3F00BFAE28 /* Evios3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Evios3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E46B4E4328D1EC3F00BFAE28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E46B4E4528D1EC3F00BFAE28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E46B4E4728D1EC3F00BFAE28 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E46B4E4728D1EC3F00BFAE28 /* CryptoLiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoLiveViewController.swift; sourceTree = "<group>"; };
 		E46B4E4A28D1EC3F00BFAE28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E46B4E4C28D1EC3F00BFAE28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E46B4E4F28D1EC3F00BFAE28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E46B4E5128D1EC3F00BFAE28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E46B4E5C28D1EE3E00BFAE28 /* CustomCryptoLiveCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCryptoLiveCell.swift; sourceTree = "<group>"; };
+		E46B4E5D28D1EE3E00BFAE28 /* CustomCryptoLiveCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCryptoLiveCell.xib; sourceTree = "<group>"; };
+		E46B4E6028D1EE5900BFAE28 /* CustomCryptoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCryptoCell.swift; sourceTree = "<group>"; };
+		E46B4E6128D1EE5900BFAE28 /* CustomCryptoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCryptoCell.xib; sourceTree = "<group>"; };
+		E46B4E6428D1EEEA00BFAE28 /* CryptoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewController.swift; sourceTree = "<group>"; };
+		E46B4E6628D1F41200BFAE28 /* CryptoLive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoLive.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +45,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E46B4E6A28D1F42300BFAE28 /* Alamofire in Frameworks */,
+				E46B4E6D28D1F43700BFAE28 /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +72,45 @@
 		E46B4E4228D1EC3F00BFAE28 /* Evios3 */ = {
 			isa = PBXGroup;
 			children = (
+				E46B4E5928D1EDCB00BFAE28 /* Views */,
+				E46B4E5828D1EDBD00BFAE28 /* Models */,
+				E46B4E5728D1EDB000BFAE28 /* Controllers */,
 				E46B4E4328D1EC3F00BFAE28 /* AppDelegate.swift */,
 				E46B4E4528D1EC3F00BFAE28 /* SceneDelegate.swift */,
-				E46B4E4728D1EC3F00BFAE28 /* ViewController.swift */,
 				E46B4E4928D1EC3F00BFAE28 /* Main.storyboard */,
 				E46B4E4C28D1EC3F00BFAE28 /* Assets.xcassets */,
 				E46B4E4E28D1EC3F00BFAE28 /* LaunchScreen.storyboard */,
 				E46B4E5128D1EC3F00BFAE28 /* Info.plist */,
 			);
 			path = Evios3;
+			sourceTree = "<group>";
+		};
+		E46B4E5728D1EDB000BFAE28 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E46B4E4728D1EC3F00BFAE28 /* CryptoLiveViewController.swift */,
+				E46B4E6428D1EEEA00BFAE28 /* CryptoViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E46B4E5828D1EDBD00BFAE28 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E46B4E6628D1F41200BFAE28 /* CryptoLive.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E46B4E5928D1EDCB00BFAE28 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E46B4E5C28D1EE3E00BFAE28 /* CustomCryptoLiveCell.swift */,
+				E46B4E5D28D1EE3E00BFAE28 /* CustomCryptoLiveCell.xib */,
+				E46B4E6028D1EE5900BFAE28 /* CustomCryptoCell.swift */,
+				E46B4E6128D1EE5900BFAE28 /* CustomCryptoCell.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +129,10 @@
 			dependencies = (
 			);
 			name = Evios3;
+			packageProductDependencies = (
+				E46B4E6928D1F42300BFAE28 /* Alamofire */,
+				E46B4E6C28D1F43700BFAE28 /* AlamofireImage */,
+			);
 			productName = Evios3;
 			productReference = E46B4E4028D1EC3F00BFAE28 /* Evios3.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +161,10 @@
 				Base,
 			);
 			mainGroup = E46B4E3728D1EC3E00BFAE28;
+			packageReferences = (
+				E46B4E6828D1F42300BFAE28 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				E46B4E6B28D1F43700BFAE28 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+			);
 			productRefGroup = E46B4E4128D1EC3F00BFAE28 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,8 +180,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E46B4E5028D1EC3F00BFAE28 /* LaunchScreen.storyboard in Resources */,
+				E46B4E5F28D1EE3E00BFAE28 /* CustomCryptoLiveCell.xib in Resources */,
 				E46B4E4D28D1EC3F00BFAE28 /* Assets.xcassets in Resources */,
 				E46B4E4B28D1EC3F00BFAE28 /* Main.storyboard in Resources */,
+				E46B4E6328D1EE5900BFAE28 /* CustomCryptoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +194,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E46B4E4828D1EC3F00BFAE28 /* ViewController.swift in Sources */,
+				E46B4E6228D1EE5900BFAE28 /* CustomCryptoCell.swift in Sources */,
+				E46B4E4828D1EC3F00BFAE28 /* CryptoLiveViewController.swift in Sources */,
+				E46B4E5E28D1EE3E00BFAE28 /* CustomCryptoLiveCell.swift in Sources */,
 				E46B4E4428D1EC3F00BFAE28 /* AppDelegate.swift in Sources */,
+				E46B4E6728D1F41200BFAE28 /* CryptoLive.swift in Sources */,
 				E46B4E4628D1EC3F00BFAE28 /* SceneDelegate.swift in Sources */,
+				E46B4E6528D1EEEA00BFAE28 /* CryptoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +418,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E46B4E6828D1F42300BFAE28 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		E46B4E6B28D1F43700BFAE28 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E46B4E6928D1F42300BFAE28 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E46B4E6828D1F42300BFAE28 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		E46B4E6C28D1F43700BFAE28 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E46B4E6B28D1F43700BFAE28 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E46B4E3828D1EC3E00BFAE28 /* Project object */;
 }
