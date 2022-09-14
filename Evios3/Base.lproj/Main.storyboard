@@ -34,11 +34,66 @@
                     <navigationItem key="navigationItem" id="hQg-f6-2Wq"/>
                     <connections>
                         <outlet property="tabViewCryptoLive" destination="fKV-7P-1Ue" id="f8r-VV-NOY"/>
+                        <segue destination="C1N-NS-DDR" kind="show" id="fm3-lv-H4T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2927.6923076923076" y="3.5545023696682461"/>
+        </scene>
+        <!--Details Crypto View Controller-->
+        <scene sceneID="9mu-sj-05L">
+            <objects>
+                <viewController storyboardIdentifier="DetailsCryptoViewController" id="C1N-NS-DDR" customClass="DetailsCryptoViewController" customModule="Evios3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kMK-eq-gYG">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="XIT-LC-nOP">
+                                <rect key="frame" x="0.0" y="91" width="390" height="56.666666666666657"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lpo-fb-iuw">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2eR-tj-4es">
+                                        <rect key="frame" x="0.0" y="36.333333333333329" width="390" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="uEk-7l-xHA">
+                                <rect key="frame" x="0.0" y="156" width="390" height="605"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5Em-CH-Odb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XIT-LC-nOP" firstAttribute="top" secondItem="5Em-CH-Odb" secondAttribute="top" id="FDN-R7-abk"/>
+                            <constraint firstItem="uEk-7l-xHA" firstAttribute="firstBaseline" secondItem="XIT-LC-nOP" secondAttribute="baseline" constant="12.333333333333334" symbolType="layoutAnchor" id="J8Z-f2-Yfn"/>
+                            <constraint firstItem="XIT-LC-nOP" firstAttribute="leading" secondItem="5Em-CH-Odb" secondAttribute="leading" id="Ru8-bF-o19"/>
+                            <constraint firstItem="uEk-7l-xHA" firstAttribute="leading" secondItem="5Em-CH-Odb" secondAttribute="leading" id="VVT-rT-4lJ"/>
+                            <constraint firstItem="5Em-CH-Odb" firstAttribute="trailing" secondItem="uEk-7l-xHA" secondAttribute="trailing" id="bTj-FV-xG1"/>
+                            <constraint firstItem="5Em-CH-Odb" firstAttribute="trailing" secondItem="XIT-LC-nOP" secondAttribute="trailing" id="g3g-Py-iFj"/>
+                            <constraint firstItem="5Em-CH-Odb" firstAttribute="bottom" secondItem="uEk-7l-xHA" secondAttribute="bottom" id="hfb-SM-pvW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xEz-RQ-RNw"/>
+                    <connections>
+                        <outlet property="historicTabView" destination="uEk-7l-xHA" id="TPS-OQ-qKC"/>
+                        <outlet property="nameLabel" destination="Lpo-fb-iuw" id="9ER-YV-6SW"/>
+                        <outlet property="valueLabel" destination="2eR-tj-4es" id="lTn-7D-wLP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wfU-kJ-gNd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3808" y="127"/>
         </scene>
         <!--Crypto View Controller-->
         <scene sceneID="Spm-Bo-1XR">
@@ -47,10 +102,25 @@
                     <view key="view" contentMode="scaleToFill" id="mmx-pY-62p">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="qB9-4c-d9E">
+                                <rect key="frame" x="0.0" y="91" width="390" height="670"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="KFa-9q-7cW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qB9-4c-d9E" firstAttribute="top" secondItem="KFa-9q-7cW" secondAttribute="top" id="62N-jt-Wlf"/>
+                            <constraint firstItem="qB9-4c-d9E" firstAttribute="leading" secondItem="KFa-9q-7cW" secondAttribute="leading" id="HFP-GF-vMc"/>
+                            <constraint firstItem="KFa-9q-7cW" firstAttribute="trailing" secondItem="qB9-4c-d9E" secondAttribute="trailing" id="gg5-FB-8hx"/>
+                            <constraint firstItem="KFa-9q-7cW" firstAttribute="bottom" secondItem="qB9-4c-d9E" secondAttribute="bottom" id="o50-Yn-GFb"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="jYl-JN-oUH"/>
+                    <connections>
+                        <outlet property="myTabView" destination="qB9-4c-d9E" id="1Iy-D8-hW3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="09U-m6-hdT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -117,6 +187,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

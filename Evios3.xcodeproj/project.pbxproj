@@ -21,6 +21,11 @@
 		E46B4E6728D1F41200BFAE28 /* CryptoLive.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46B4E6628D1F41200BFAE28 /* CryptoLive.swift */; };
 		E46B4E6A28D1F42300BFAE28 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = E46B4E6928D1F42300BFAE28 /* Alamofire */; };
 		E46B4E6D28D1F43700BFAE28 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = E46B4E6C28D1F43700BFAE28 /* AlamofireImage */; };
+		E46B4E6F28D20E3700BFAE28 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46B4E6E28D20E3700BFAE28 /* Crypto.swift */; };
+		E46B4E7128D2176400BFAE28 /* DetailsCryptoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46B4E7028D2176400BFAE28 /* DetailsCryptoViewController.swift */; };
+		E46B4E7328D21EA500BFAE28 /* Historic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46B4E7228D21EA500BFAE28 /* Historic.swift */; };
+		E46B4E7628D2201100BFAE28 /* CustomDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46B4E7428D2201100BFAE28 /* CustomDetailsCell.swift */; };
+		E46B4E7728D2201100BFAE28 /* CustomDetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E46B4E7528D2201100BFAE28 /* CustomDetailsCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +43,11 @@
 		E46B4E6128D1EE5900BFAE28 /* CustomCryptoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCryptoCell.xib; sourceTree = "<group>"; };
 		E46B4E6428D1EEEA00BFAE28 /* CryptoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewController.swift; sourceTree = "<group>"; };
 		E46B4E6628D1F41200BFAE28 /* CryptoLive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoLive.swift; sourceTree = "<group>"; };
+		E46B4E6E28D20E3700BFAE28 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		E46B4E7028D2176400BFAE28 /* DetailsCryptoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCryptoViewController.swift; sourceTree = "<group>"; };
+		E46B4E7228D21EA500BFAE28 /* Historic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Historic.swift; sourceTree = "<group>"; };
+		E46B4E7428D2201100BFAE28 /* CustomDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDetailsCell.swift; sourceTree = "<group>"; };
+		E46B4E7528D2201100BFAE28 /* CustomDetailsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomDetailsCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +100,7 @@
 			children = (
 				E46B4E4728D1EC3F00BFAE28 /* CryptoLiveViewController.swift */,
 				E46B4E6428D1EEEA00BFAE28 /* CryptoViewController.swift */,
+				E46B4E7028D2176400BFAE28 /* DetailsCryptoViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -98,6 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				E46B4E6628D1F41200BFAE28 /* CryptoLive.swift */,
+				E46B4E6E28D20E3700BFAE28 /* Crypto.swift */,
+				E46B4E7228D21EA500BFAE28 /* Historic.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -109,6 +122,8 @@
 				E46B4E5D28D1EE3E00BFAE28 /* CustomCryptoLiveCell.xib */,
 				E46B4E6028D1EE5900BFAE28 /* CustomCryptoCell.swift */,
 				E46B4E6128D1EE5900BFAE28 /* CustomCryptoCell.xib */,
+				E46B4E7428D2201100BFAE28 /* CustomDetailsCell.swift */,
+				E46B4E7528D2201100BFAE28 /* CustomDetailsCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -184,6 +199,7 @@
 				E46B4E4D28D1EC3F00BFAE28 /* Assets.xcassets in Resources */,
 				E46B4E4B28D1EC3F00BFAE28 /* Main.storyboard in Resources */,
 				E46B4E6328D1EE5900BFAE28 /* CustomCryptoCell.xib in Resources */,
+				E46B4E7728D2201100BFAE28 /* CustomDetailsCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,11 +210,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E46B4E6F28D20E3700BFAE28 /* Crypto.swift in Sources */,
 				E46B4E6228D1EE5900BFAE28 /* CustomCryptoCell.swift in Sources */,
+				E46B4E7328D21EA500BFAE28 /* Historic.swift in Sources */,
 				E46B4E4828D1EC3F00BFAE28 /* CryptoLiveViewController.swift in Sources */,
+				E46B4E7128D2176400BFAE28 /* DetailsCryptoViewController.swift in Sources */,
 				E46B4E5E28D1EE3E00BFAE28 /* CustomCryptoLiveCell.swift in Sources */,
 				E46B4E4428D1EC3F00BFAE28 /* AppDelegate.swift in Sources */,
 				E46B4E6728D1F41200BFAE28 /* CryptoLive.swift in Sources */,
+				E46B4E7628D2201100BFAE28 /* CustomDetailsCell.swift in Sources */,
 				E46B4E4628D1EC3F00BFAE28 /* SceneDelegate.swift in Sources */,
 				E46B4E6528D1EEEA00BFAE28 /* CryptoViewController.swift in Sources */,
 			);

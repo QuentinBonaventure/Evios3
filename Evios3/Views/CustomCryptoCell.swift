@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class CustomCryptoCell: UITableViewCell {
     
@@ -22,6 +23,23 @@ class CustomCryptoCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func setup(crypto: Crypto){
+        nameLabel.text = crypto.name
+        if let imageUrl = crypto.icon,
+           let url = URL(string: imageUrl){
+            logoCrypto.af.setImage(withURL: url)
+        }else{
+            logoCrypto.isHidden = true
+        }
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        logoCrypto.af.cancelImageRequest()
+        logoCrypto.image = nil
+        logoCrypto.isHidden = false
     }
     
 }

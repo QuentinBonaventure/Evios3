@@ -17,23 +17,26 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sws-Pc-Vc5">
-                        <rect key="frame" x="10" y="5" width="300" height="21"/>
+                        <rect key="frame" x="10" y="5" width="300" height="51"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b8W-Vj-sol">
-                        <rect key="frame" x="40" y="27" width="240" height="139"/>
+                        <rect key="frame" x="110" y="66" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="6LO-0Z-5hF"/>
+                            <constraint firstAttribute="height" constant="100" id="cs5-WW-Bje"/>
+                        </constraints>
                     </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="b8W-Vj-sol" secondAttribute="bottom" constant="10" id="2j0-uW-K0Y"/>
-                    <constraint firstItem="Sws-Pc-Vc5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="Y48-Nk-tuU"/>
-                    <constraint firstItem="b8W-Vj-sol" firstAttribute="top" secondItem="Sws-Pc-Vc5" secondAttribute="bottom" constant="1" id="cSd-vB-QD2"/>
-                    <constraint firstItem="b8W-Vj-sol" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="jce-KP-E7c"/>
-                    <constraint firstItem="Sws-Pc-Vc5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="l46-nI-G3x"/>
-                    <constraint firstAttribute="trailing" secondItem="Sws-Pc-Vc5" secondAttribute="trailing" constant="10" id="lEL-at-sbk"/>
-                    <constraint firstAttribute="trailing" secondItem="b8W-Vj-sol" secondAttribute="trailing" constant="40" id="lhv-Qi-tRT"/>
+                    <constraint firstItem="b8W-Vj-sol" firstAttribute="top" secondItem="Sws-Pc-Vc5" secondAttribute="bottom" constant="10" id="F32-8o-9TQ"/>
+                    <constraint firstItem="b8W-Vj-sol" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="NnA-sE-bgj"/>
+                    <constraint firstItem="Sws-Pc-Vc5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Tud-kK-Gk8"/>
+                    <constraint firstAttribute="trailing" secondItem="Sws-Pc-Vc5" secondAttribute="trailing" constant="10" id="aoa-7t-8h1"/>
+                    <constraint firstAttribute="bottom" secondItem="b8W-Vj-sol" secondAttribute="bottom" constant="10" id="hPM-74-ayt"/>
+                    <constraint firstItem="Sws-Pc-Vc5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="vhv-Ag-47k"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

@@ -15,7 +15,8 @@ class CustomCryptoLiveCell: UITableViewCell {
     @IBOutlet var valueLabel: UILabel!
     @IBOutlet var infoButton: UIButton!
     @IBOutlet var nameLabel: UILabel!
-    @IBOutlet var RankLabel: UILabel!
+    
+    @IBOutlet var rankLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -26,6 +27,14 @@ class CustomCryptoLiveCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func setup(cryptoLive: CryptoLive){
+        rankLabel.text? = cryptoLive.rank
+        nameLabel.text = cryptoLive.name
+        valueLabel.text = cryptoLive.value
+        evolutionLabel.text = cryptoLive.evolution
+        
     }
     
 }
