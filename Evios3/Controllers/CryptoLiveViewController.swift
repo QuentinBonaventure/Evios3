@@ -11,6 +11,7 @@ import Alamofire
 class CryptoLiveViewController: UIViewController {
     
     
+    @IBOutlet var indicatorDownload: UIActivityIndicatorView!
     
     private var cryptosLive =  [CryptoLive]()
     
@@ -27,10 +28,14 @@ class CryptoLiveViewController: UIViewController {
         
         fetchCryptos()
         
+      
+        
     }
     
     
     func fetchCryptos(){
+        indicatorDownload.isHidden = false
+        indicatorDownload.startAnimating()
         let apiURL = URL(string: "https://api.coincap.io/v2/assets")!
         AF.request(apiURL).response{
             [weak self] response in
@@ -40,6 +45,9 @@ class CryptoLiveViewController: UIViewController {
                 do{
                     let result = try JSONDecoder().decode(Datas.self, from: data)
                     self?.cryptosLive = result.data
+                    
+                    self?.indicatorDownload.isHidden = true
+                    self?.indicatorDownload.stopAnimating()
                     self?.tabViewCryptoLive.reloadData()
                 }
                 catch{
@@ -47,6 +55,7 @@ class CryptoLiveViewController: UIViewController {
                 }
             case .failure(let error):
                 print(error)
+                
             }
         }
     }

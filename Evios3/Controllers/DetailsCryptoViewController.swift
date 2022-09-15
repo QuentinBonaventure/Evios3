@@ -13,6 +13,8 @@ class DetailsCryptoViewController: UIViewController {
     static let identifier = "DetailsCryptoViewController"
     
     private var historics = [Historic]()
+    
+    @IBOutlet var indicatorDownload: UIActivityIndicatorView!
 
     @IBOutlet var historicTabView: UITableView!
     @IBOutlet var valueLabel: UILabel!
@@ -25,9 +27,12 @@ class DetailsCryptoViewController: UIViewController {
         historicTabView.dataSource = self
         historicTabView.register(UINib(nibName: CustomDetailsCell.identifier, bundle: .main), forCellReuseIdentifier: CustomDetailsCell.identifier)
         
+        fetchHistorics()
+        
         
     }
     
+
     func setup(){
         valueLabel.text = crypto?.value
         nameLabel.text = crypto?.name
@@ -36,15 +41,29 @@ class DetailsCryptoViewController: UIViewController {
     func fetchHistorics(){
         let apiURL = URL(string: "https://api.coincap.io/v2/assets/bitcoin/history?interval=d1")!
         
+        indicatorDownload.isHidden = false
+        indicatorDownload.startAnimating()
+        
         AF.request(apiURL).response{
             [weak self] response in
             switch response.result {
+                
             case .success(let data):
                 guard let data = data else {return}
                 do{
                     let result = try JSONDecoder().decode(DatasDetails.self, from: data)
+                    self?.historics = result.data
+                    self?.historicTabView.reloadData()
+                    self?.indicatorDownload.isHidden = true
+                    self?.indicatorDownload.stopAnimating()
                     
                 }
+                catch{
+                    print(error)
+                    
+                }
+            case.failure(let error):
+                print(error)
             }
         }
     }

@@ -11,6 +11,7 @@ import AlamofireImage
 
 class CryptoViewController: UIViewController {
     
+    @IBOutlet var downloadIndicator: UIActivityIndicatorView!
     private var cryptos = [Crypto]()
 
     @IBOutlet var myTabView: UITableView!
@@ -26,7 +27,10 @@ class CryptoViewController: UIViewController {
     }
     
     func fetchCryptos(){
+        downloadIndicator.isHidden = false
+        downloadIndicator.startAnimating()
         let apiURL = URL(string: "https://api.coinstats.app/public/v1/coins?skip=0&limit=50&currency=EUR")!
+        
         AF.request(apiURL).response{
             [weak self] response in
             switch response.result{
@@ -37,6 +41,8 @@ class CryptoViewController: UIViewController {
                         let result = try JSONDecoder().decode(Coins.self, from: data)
                         self?.cryptos = result.coins
                         self?.myTabView.reloadData()
+                        self?.downloadIndicator.isHidden = true
+                        self?.downloadIndicator.stopAnimating()
                     }
                     catch{
                         print(error)

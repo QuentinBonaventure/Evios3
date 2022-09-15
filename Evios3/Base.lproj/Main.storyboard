@@ -21,6 +21,10 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="sectionIndexBackgroundColor" systemColor="systemPurpleColor"/>
                             </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" id="bqd-Qh-5VI">
+                                <rect key="frame" x="0.0" y="400" width="390" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -33,6 +37,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="hQg-f6-2Wq"/>
                     <connections>
+                        <outlet property="indicatorDownload" destination="bqd-Qh-5VI" id="rsM-0A-oJY"/>
                         <outlet property="tabViewCryptoLive" destination="fKV-7P-1Ue" id="f8r-VV-NOY"/>
                         <segue destination="C1N-NS-DDR" kind="show" id="fm3-lv-H4T"/>
                     </connections>
@@ -71,6 +76,10 @@
                                 <rect key="frame" x="0.0" y="156" width="390" height="605"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" id="CmN-jv-dOr">
+                                <rect key="frame" x="0.0" y="422" width="390" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5Em-CH-Odb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -87,6 +96,7 @@
                     <navigationItem key="navigationItem" id="xEz-RQ-RNw"/>
                     <connections>
                         <outlet property="historicTabView" destination="uEk-7l-xHA" id="TPS-OQ-qKC"/>
+                        <outlet property="indicatorDownload" destination="CmN-jv-dOr" id="lzc-eH-48G"/>
                         <outlet property="nameLabel" destination="Lpo-fb-iuw" id="9ER-YV-6SW"/>
                         <outlet property="valueLabel" destination="2eR-tj-4es" id="lTn-7D-wLP"/>
                     </connections>
@@ -107,6 +117,10 @@
                                 <rect key="frame" x="0.0" y="91" width="390" height="670"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" id="N6P-Pe-ix9">
+                                <rect key="frame" x="0.0" y="400" width="390" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KFa-9q-7cW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -119,6 +133,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="jYl-JN-oUH"/>
                     <connections>
+                        <outlet property="downloadIndicator" destination="N6P-Pe-ix9" id="Tgy-Le-2mk"/>
                         <outlet property="myTabView" destination="qB9-4c-d9E" id="1Iy-D8-hW3"/>
                     </connections>
                 </viewController>
@@ -151,6 +166,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="nOr-KG-cF9" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="16y-KK-XUW">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
