@@ -12,12 +12,14 @@ struct Datas: Codable{
 }
 
 struct CryptoLive: Codable {
+    let id: String
     let rank: String
     let name: String
     let value: String
     let evolution: String
     
     enum CodingKeys: String, CodingKey{
+        case id
         case rank
         case name
         case value = "priceUsd"

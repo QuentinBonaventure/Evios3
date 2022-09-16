@@ -14,6 +14,7 @@ class DetailsCryptoViewController: UIViewController {
     
     private var historics = [Historic]()
     
+    
     @IBOutlet var indicatorDownload: UIActivityIndicatorView!
 
     @IBOutlet var historicTabView: UITableView!
@@ -39,12 +40,12 @@ class DetailsCryptoViewController: UIViewController {
     }
     
     func fetchHistorics(){
-        let apiURL = URL(string: "https://api.coincap.io/v2/assets/bitcoin/history?interval=d1")!
+       
         
         indicatorDownload.isHidden = false
         indicatorDownload.startAnimating()
         
-        AF.request(apiURL).response{
+            AF.request("https://api.coincap.io/v2/assets/\(crypto.id)/history?interval=d1").response{
             [weak self] response in
             switch response.result {
                 
@@ -66,6 +67,7 @@ class DetailsCryptoViewController: UIViewController {
                 print(error)
             }
         }
+        
     }
     
 
